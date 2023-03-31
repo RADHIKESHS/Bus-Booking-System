@@ -1,5 +1,4 @@
 package com.masai;
-
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.chrono.ChronoLocalDate;
@@ -11,10 +10,10 @@ import java.util.*;
 public class BusBookingSystem {
 
     // List to store all the buses
-    private List<Bus> busList = new ArrayList<>();
+    static List<Bus> busList = new ArrayList<>();
 
     // List to store all the bookings
-    private List<Booking> bookingList = new ArrayList<>();
+     static List<Booking> bookingList = new ArrayList<>();
 
     // Method for user login
     public boolean login(String username, String password) {
@@ -25,13 +24,13 @@ public class BusBookingSystem {
         return false;
     }
 
-
     // Method to add a bus
     public void addBus(String busName, int busNo, String source, String destination, String busType,
             LocalTime departureTime, LocalTime arrivalTime, int totalSeats)  {
         // Create a new bus object
         Bus bus = new Bus(busName, busNo, source, destination, busType, departureTime, arrivalTime, totalSeats);
         // Add the bus to the bus list
+
         busList.add(bus);
         System.out.println("Bus added successfully!");
     }

@@ -5,5 +5,5 @@
  * @author Radhikesh
  *
  */
-module BusBookingSystem {
+module BusTicketReservationSystem {
 }
