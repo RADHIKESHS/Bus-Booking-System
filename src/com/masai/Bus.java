@@ -84,12 +84,12 @@ public class Bus {
 	}
 
 
-	// @Override
-	// public String toString() {
-	// 	return "Bus [busName=" + busName + ", busNo=" + busNo + ", source=" + source + ", destination=" + destination
-	// 			+ ", busType=" + busType + ", departureTime=" + departureTime + ", arrivalTime=" + arrivalTime
-	// 			+ ", totalSeats=" + totalSeats + ", availableSeats=" + availableSeats + "]";
-	// }
+	 @Override
+	 public String toString() {
+	 	return "Bus [busName=" + busName + ", busNo=" + busNo + ", source=" + source + ", destination=" + destination
+	 			+ ", busType=" + busType + ", departureTime=" + departureTime + ", arrivalTime=" + arrivalTime
+	 			+ ", totalSeats=" + totalSeats + ", availableSeats=" + availableSeats + "]";
+	 }
 
 
 	public void setDepartureTime(LocalTime departureTime) {
@@ -138,12 +138,12 @@ public class Bus {
         this.availableSeats += totalSeats - oldTotalSeats;
     }
 
-    // public void bookSeats(int numSeats) {
-    //     if (numSeats > availableSeats) {
-    //         throw new IllegalArgumentException("Not enough available seats!");
-    //     }
-    //     availableSeats -= numSeats;
-    // }
+//     public void bookSeats(int numSeats) {
+//         if (numSeats > availableSeats) {
+//             throw new IllegalArgumentException("Not enough available seats!");
+//         }
+//         availableSeats -= numSeats;
+//     }
 
     public void cancelBooking(Booking booking) {
         int numSeats = booking.getNumSeats();
@@ -178,6 +178,14 @@ public class Bus {
     }
 
 
+	public void bookSeats(int numSeats) {
+		// TODO Auto-generated method stub
+        if (numSeats > availableSeats) {
+            throw new IllegalArgumentException("Not enough available seats!");
+        }
+        availableSeats -= numSeats;
+		
+	}
 
 
 }

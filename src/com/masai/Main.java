@@ -315,7 +315,6 @@ public class Main {
         	                	Booking booking = new Booking(passengerUsername, busName, source, destination, numSeats);
         	                	loggedInPassenger.addBooking(booking);
         	                	BusBookingSystem.bookingList.add(booking);
-//        	                	bus.bookTickets(passengerUsername, busName, source, destination, numSeats);
         	
         	                	System.out.println("Booking confirmed!");
         	                	System.out.println("Booking ID: " + booking.getBookingID());
@@ -356,4 +355,5 @@ public class Main {
             System.out.println("Invalid option selected");
         }
     }
+
 }
