@@ -9,7 +9,12 @@ public class Main {
     
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter 1 for admin, 2 for user:");
+        System.out.println("=========================================");
+        System.out.println("|     WELCOME TO BUS BOOKING SYSTEM      |");
+        System.out.println("=========================================");
+        System.out.println("                                          ");
+        System.out.println("|~        1. - ADMIN , 2. - USER:       ~|");
+        System.out.println("=========================================");
         int option = sc.nextInt();
         
         
