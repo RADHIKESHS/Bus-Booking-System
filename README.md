@@ -1,4 +1,4 @@
-*Bus Ticket Reservation System*
+**Bus Ticket Reservation System**
 
 The Bus Ticket Reservation System is an application designed to cater to the needs of passengers who are traveling from one point to another. The system has two main users, the Administrator and the Passenger. The Administrator is responsible for adding, updating, and deleting buses, viewing all bookings, viewing bookings for a date range, viewing bookings by bus name, and viewing bookings by the username of the passenger. On the other hand, the Passenger can see a list of all buses, book tickets, cancel their tickets, sign-up, sign-in, change personal details and passwords, see their ticket booking history, and delete their account.
 
