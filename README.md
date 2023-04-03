@@ -10,7 +10,7 @@ The Bus Ticket Reservation System is an application designed to cater to the nee
 **Administrator--**
         The Administrator has the following roles in the Bus Ticket Reservation System:
 
-##Login--
+**Login--**
          The Administrator can log in to the system using a fixed username and password. The username and password are "admin" and "admin", respectively.
 
 **Add Bus--**
